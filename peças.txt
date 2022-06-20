@@ -7,4 +7,3 @@
 	Bcryptjs - Encriptação de senhas
 	Passport - Controle de acesso
 -------------------------------------------------------------------------
-Aulas, cadastro aula 58
