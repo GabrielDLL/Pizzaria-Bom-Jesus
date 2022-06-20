@@ -1,0 +1,123 @@
+
+.container .container-body{
+    border: 2px solid black;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 10%;
+    border-radius: 20px;
+
+    
+    font-family: 'Roboto', sans-serif;
+}
+.container .container-body .login-area{
+    padding: 0px 20px;
+}
+
+.container .container-body .login-area .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    border-bottom: 2px solid black;
+}
+
+.container .container-body .login-area .header h2{
+    font-weight: 300;
+    font-size: 2.6rem;
+}
+
+.container .container-body .login-area .header img{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.container .container-body .login-area .header .info{
+    display: flex;
+    align-items: center;
+}
+
+.container .container-body .login-area .header .info img{
+    width: 40px;
+}
+
+.container .container-body .login-area .input-area{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+
+
+.container .container-body .login-area .input-area form{
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+.container .container-body .login-area .input-area .user-area{
+    margin-bottom: 20px;
+}
+.container .container-body .login-area .input-area .password-area{
+    margin-bottom: 20px;
+}
+
+
+.container .container-body .login-area .input-area form label{
+    display: block;
+}
+
+.container .container-body .login-area .input-area form input[type=text], input[type=password]{
+    font-size: 2.6rem;
+    line-height: 5.4rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.container .container-body .login-area .input-area form .btn-area{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.container .container-body .login-area .input-area form .btn-area a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: darkred;
+    width: 150px;
+    padding: 5px;
+}
+
+.container .container-body .login-area .input-area form input[type=submit]{
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight: 300;
+    padding: 0 30px;
+}
+
+@media(max-width: 768px)
+{
+    .container .container-body{
+        width: 500px;
+    }
+ 
+    .container .container-body .input-area form .btn-area{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .container-body .input-area form .btn-area input[type=submit]{
+        margin: 20px;
+        height: 50px;
+    }
+
+    .container .container-body .input-area .btn-area a{
+        margin: 20px;
+
+    }
+}

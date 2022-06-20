@@ -1,0 +1,115 @@
+.navbar{
+    background-image: url("/imgs/fundo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+}
+
+/*  CENTER  */
+.navbar .container .center .logo{
+    width: 120px;
+}
+
+
+/*  LEFT SIDE   */
+
+.navbar .container .left-side{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar .container .left-side .user-info{
+    margin-left: 100px;
+}
+
+.navbar .container .left-side .user-info h3{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 2.0rem;
+    font-weight: 300;    
+}
+
+.navbar .container .left-side .user-info h4{
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 300;   
+}
+
+/*  RIGHT SIDE   */
+.navbar .container .right-side{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container .right-side .chat-desktop-hide{
+    display: none;
+    background-color: white;
+    min-width: 52px;
+    min-height: 52px;
+    border-radius: 50%;
+}
+
+.navbar .container .right-side a:first-of-type{
+    margin-right: 20px;
+}
+
+.navbar .container .right-side .icon{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.navbar .container .right-side h2{
+    margin-right: 50px;
+    font-size: 2.0rem;
+    font-weight: 300;
+}
+
+.navbar .container .right-side a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+@media(max-width: 768px){
+
+    .navbar .container .center .logo{
+        width: 100px;
+    }
+
+    .navbar .container .right-side .chat-desktop-hide{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .container .right-side a{
+        display: none;
+    }
+
+    .navbar .container .right-side .chat-desktop-hide img{
+        width: 35px;
+        margin: 0;
+    }
+
+    .navbar .container .right-side h2,
+    .navbar .container .right-side .hide,
+    .navbar .container .left-side .user-info h3,
+    .navbar .container .left-side .user-info h4{
+        display: none;
+    }
+    
+    .navbar .container .left-side .user-info{
+        margin-left: 0px;
+    }
+}

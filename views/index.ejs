@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../css/geral.css">
+        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+
+        <link rel="stylesheet" type="text/css" href="../css/home/style.css">
+        <title>Pizzaria Bom Jesus</title>
+    </head>
+    <body id="body">
+
+        <%- include('partials/_navbar',{page: "home",user: user});%>
+
+        <section class="main-content">      
+            <div class="container">
+                <div class="container-body">
+                    <h2 id="cardapio">Cardápio</h2>
+                    <div class="cardapio-principal">
+                        <div class="pizza">
+                            <img src="imgs/pizza1.jpg">
+                            <h3>Pizza de Frango</h3>
+                        </div>
+
+                        <div class="pizza">
+                            <img src="imgs/pizza2.jpg">
+                            <h3>Pizza de Mussarela</h3>
+                        </div>
+
+                        <div class="pizza">
+                            <img src="imgs/pizza3.jpg">
+                            <h3>Pizza de Calabresa</h3>
+                        </div>
+                        
+                        <div class="pizza">
+                            <img src="imgs/pizza2.jpg">
+                            <h3>Pizza de Presunto</h3>
+                        </div>
+
+                        <div class="pizza">
+                            <img src="imgs/pizza3.jpg">
+                            <h3>Pizza de Bacon</h3>
+                        </div>
+
+                        <div class="pizza">
+                            <img src="imgs/pizza1.jpg">
+                            <h3>Pizza de Queijo</h3>
+                        </div>
+                    </div>
+                    <h4>Outros sabores:</h4>
+                    <div class="cardapio-secundario">
+                        <div>
+                            <p>Pizza de Atum</p>
+                            <p>Pizza de Batata</p>
+                            <p>Pizza de Strogonoff</p>
+                            <p>Pizza de Carne Moída</p>
+                        </div>
+                        <div>
+                            <p>Pizza de Brigadeiro</p>
+                            <p>Pizza de Chocolate</p>
+                            <p>Pizza de Morango</p>
+                            <p>Pizza de Morango com Chocolate</p>
+                        </div>
+                        <div>
+                            <p>Pizza de Banana</p>
+                            <p>Pizza de Baunilha</p>
+                            <p>Pizza de Camarão</p>
+                            <p>Pizza de Milho</p>
+                        </div>
+                    </div>
+                    <h2 id="avaliacoes">Avaliações</h2>
+                    <div class="avaliacoes">
+                        <div>
+                            <p>"As pizzas são excelentes!"</p>
+                            <div class="stars">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <p>5/5</p>
+                            </div>
+                            <h5>- João Mota</h5>
+                        </div>
+
+                        <div>
+                            <p>"Preços muito bons pela qualidade!"</p>
+                            <div class="stars">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <p>5/5</p>
+                            </div>
+                            <h5>- Gabriel Ferreira</h5>
+                        </div>
+
+                        <div>
+                            <p>"Ótimo atendimento!"</p>
+                            <div class="stars">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <img src="../icons/star.svg">
+                                <p>5/5</p>
+                            </div>
+                            <h5>- Leonardo Silva</h5>
+                        </div>
+                    </div>
+                    <h2 id="contato">Contato</h2>
+                    <div class="contato">
+                        <p><b>Endereço: </b>Rua Otavio, Bairro Santos, 983</p>
+                        <p><b>Fone: </b>(55) 91234567</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <p>&copy;Todos os direitos reservados.</p>
+            </div>
+        </section>
+    </body>
+</html>

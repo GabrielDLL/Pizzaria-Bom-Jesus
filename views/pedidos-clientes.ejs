@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../css/pedidos_cliente/style.css">
+    <title>Novo Pedido</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-body">
+            <div class="login-area">
+                <div class="header-area">
+                    <img src="../icons/logopizzaria.png">
+                    <h2>Novo pedido:</h2>
+                </div>
+                <div class="input-area">
+                    <form action="" method="post">
+                        <label for="pizza">Escolha o sabor:</label>
+                        <select name="pizza" id="pizzas">
+                            <optgroup label="Pizzas Doces">
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Morango">Morango</option>
+                            </optgroup>
+                            <optgroup label="Pizzas Salgadas">
+                            <option value="Frango">Frango</option>
+                            <option value="Bacon">Bacon</option>
+                            </optgroup>
+                        </select>
+                        <label for="qtd">Quantidade:</label>
+                        <select name="qtd" id="qtd">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <div class="rua-area">
+                            <label for="rua">Rua:</label>
+                            <input type="text" id="rua" name="rua" required>
+                        </div>
+                        <div class="bairro-area">
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" name="bairro" required>
+                        </div>
+                        <div class="numero-area">
+                            <label for="numero">Número:</label>
+                            <input type="text" id="numero" name="numero" required>
+                        </div>
+                        <div class="btn-area">
+                            <input type="submit" value="Fazer pedido">
+                            <button type="button"><a href="/clientes">Cancelar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

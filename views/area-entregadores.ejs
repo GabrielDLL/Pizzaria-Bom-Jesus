@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../css/area_entregadores/style.css">
+
+    <title>Área de Entregadores</title>
+    
+</head>
+<body>
+    <%- include('partials/_navbar',{page: "entregadores"});%>
+    <section class="main-content">
+        <div class="container">
+            <div class="page-selection">
+                <p onclick="func_pendentes() " class="btn-pendentes">PENDENTES</p>
+                <p onclick="func_finalizados()" class="btn-finalizados">FINALIZADOS</p>
+            </div>
+            <div class="container-body">
+                <div class="pendentes">
+                   
+                        <% pedidos.forEach(function(pedido){ %>
+                            <%if(pedido.status == "entregar"){%>
+                                
+                            <div class="pedido-body">
+                                <div class="nome">
+                                    <h2>Nome: </h2>
+                                    <p><%= pedido.nome %></p>
+                                </div>
+                                <div class="pedido">
+                                    <h2>Pedido: </h2>
+                                    <p>Pizza de <%= pedido.pizza %></p>
+                                </div>
+                                <div class="endereco">
+                                    <h2>Endereço:</h2>
+                                    <p><%= pedido.endereco %></p>
+                                </div>
+                                <form action="" method="post">
+                                    <input type="hidden" id="id" name="id" value="<%=pedido._id%>">
+                                    <input type="submit" value="Entregue">
+                                </form>
+                            </div>
+                            
+                        <%}%>
+                    <% }); %>
+                </div>
+                <div class="finalizados">
+                    <% pedidos.forEach(function(pedido){ %>
+                        <%if(pedido.status == "entregue"){%>
+                            <div class="pedido-body">
+                                <div class="nome">
+                                    <h2>Nome: </h2>
+                                    <p><%= pedido.nome %></p>
+                                </div>
+                                <div class="pedido">
+                                    <h2>Pedido: </h2>
+                                    <p>Pizza de <%= pedido.pizza %></p>
+                                </div>
+                                <div class="quantidade">
+                                    <h2>Qtd:</h2>
+                                    <p><%= pedido.qtd %></p>
+                                </div>
+                                <div class="endereco">
+                                    <h2>Endereço:</h2>
+                                    <p><%= pedido.endereco %></p>
+                                </div>
+                            </div>
+                        <%}%>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let pendentes = document.querySelector(".pendentes")
+        let finalizados = document.querySelector(".finalizados")
+        let btn_pendentes = document.querySelector(".btn-pendentes")
+        let btn_finalizados = document.querySelector(".btn-finalizados")
+        function func_finalizados(){
+            pendentes.style.display = "none"
+            btn_pendentes.style.color = "black"
+            btn_pendentes.style.borderBottom = "1px solid black"
+           
+            finalizados.style.display = "block"
+            btn_finalizados.style.color = "blue"
+            btn_finalizados.style.borderBottom = "1px solid blue"
+        }
+        
+        function func_pendentes(){
+            finalizados.style.display = "none"
+            btn_finalizados.style.color = "black"
+            btn_finalizados.style.borderBottom = "1px solid black"
+           
+            pendentes.style.display = "block"
+            btn_pendentes.style.color = "blue"
+            btn_pendentes.style.borderBottom = "1px solid blue"
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.main-content .container{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.main-content .container .page-selection{
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+    background-color: lightgrey;
+}
+
+.main-content .container .page-selection p:first-of-type{
+    margin-right: 20px;
+}
+
+.main-content .container .page-selection p{
+    font-weight: 300;
+    font-size: 2.0rem;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.main-content .container .page-selection .btn-pendentes{
+    border-bottom: 1px solid blue;
+    color: blue;
+}
+
+.main-content  .pedido-body img{
+    width: 15px;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.main-content  .pedido-body{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.main-content  .pedido-body div{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 0 30px;
+    align-items: center;
+}
+
+
+.main-content  .pedido-body p{
+    font-size: 1.6rem;
+    margin-left: 2px;
+}
+
+.main-content  .pedido-body form input[type=submit]{
+    font-size: 1.6rem;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    background-color: darkgreen;
+}
+
+.main-content  .pedido-status{
+    background-color: lightgrey;
+    border-left: 1px solid black;
+    display: none;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.main-content .finalizados{
+    display: none;
+}
+
+@media(max-width:325px){
+    .main-content .container .page-selection p{
+        font-size: 1.5rem;
+    }
+}

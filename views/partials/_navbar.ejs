@@ -1,0 +1,57 @@
+<div class="navbar">
+    <div class="container">
+        <div class="left-side">
+            <% if(page == "home"){%>
+                <!-- dropdown home -->
+                <%- include('./_dropdown',{page: "home"});%>
+            <%}%>
+            <% if(page == "clientes"){%>
+                <!-- dropdown clientes -->
+                <%- include('./_dropdown',{page: "clientes"});%>
+                <div class="user-info">
+                    <h3>Cliente:</h3>
+                    <h4><%=user.usuario%></h4>
+                </div>
+            <%}%>
+            <% if(page == "funcionarios"){%>
+                <!-- dropdown funcionarios -->
+                <%- include('./_dropdown',{page: "funcionarios"});%>
+                <div class="user-info">
+                    <h3>Funcionário:</h3>
+                    <h4><%=user.usuario%></h4>
+                </div>
+            <%}%>
+            <% if(page == "entregadores"){%>
+                <!-- dropdown entregadores -->
+                <%- include('./_dropdown',{page: "entregadores"});%>
+                <div class="user-info">
+                    <h3>Entregador:</h3>
+                    <h4><%=user.usuario%></h4>
+                </div>
+            <%}%>
+        </div>
+        <div class="center">
+            <img class="logo" src="../icons/logopizzaria.png">
+        </div>
+        <div class="right-side">
+            <% if(page == "home"){%>
+                <a href="#"><img class="icon" src="../icons/headset-white.svg">Chat online</a>
+                <div class="chat-desktop-hide"><img class="icon" src="../icons/headset-black.svg"></div>
+            <%}%>
+            <% if(page == "clientes"){%>
+                <a href="#"><img class="icon" src="../icons/headset-white.svg">Chat online</a>
+                <div class="chat-desktop-hide"><img class="icon" src="../icons/headset-black.svg"></div>
+            <%}%>
+            <% if(page == "funcionarios"){%>
+                <img class="icon hide" src="../icons/group-white.svg">
+                <h2>Área de funcionários</h2>
+                <a href="#"><img class="icon" src="../icons/headset-white.svg">ADM Chat</a>
+                <div class="chat-desktop-hide"><img class="icon" src="../icons/headset-black.svg"></div>
+            <%}%>
+            <% if(page == "entregadores"){%>
+                <img class="icon" src="../icons/truck-white.svg">
+                <h2>Área de entregadores</h2>
+            <%}%>
+        </div>
+    </div>
+</div>

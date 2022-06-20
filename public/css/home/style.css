@@ -1,0 +1,179 @@
+body{
+    background-image: url("/imgs/fundo2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-content .container .container-body{
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.main-content .container .container-body h2{
+    font-size: 2.6rem;
+    font-weight: 300;
+    border-bottom: 1px solid white;
+}
+
+/*######    CARDAPIO    #########*/
+.main-content .container .container-body .cardapio-principal{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    justify-items: center;
+    gap: 30px 80px;
+}
+
+.main-content .container .container-body .cardapio-principal .pizza{
+    background-color: rgba(255, 255, 255, 0.911);
+    border: 5px solid lightgrey;
+    border-radius: 6px;
+
+}
+
+.main-content .container .container-body .cardapio-principal .pizza h3{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.705);
+    text-align: center;
+    margin: 2px;
+    font-size: 2.6rem;
+}
+
+.main-content .container .container-body .cardapio-principal .pizza img{
+    width: 250px;
+    height: 200px;
+    border-radius: 1px;
+    border-bottom: 5px solid lightgrey;
+}
+
+.main-content .container .container-body h4{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 2.0rem;
+    font-weight: 300;
+}
+
+.main-content .container .container-body .cardapio-secundario{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .container .container-body .cardapio-secundario p{
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+}
+/*##########################################*/
+
+.main-content .container .container-body .avaliacoes{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    font-family: 'Roboto',sans-serif;
+    margin: 40px 0px;
+    
+}
+
+.main-content .container .container-body .avaliacoes .stars{
+    display: flex;
+}
+
+.main-content .container .container-body .avaliacoes .stars img{
+    width: 20px;
+}
+
+.main-content .container .container-body .avaliacoes p{
+    margin: 0;
+    font-size: 2.0rem;
+    font-style: italic;
+    font-weight: 300;
+}
+.main-content .container .container-body .avaliacoes h5{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    text-decoration: dotted;
+    font-weight: 400;
+}
+
+.main-content .container .container-body .contato p{
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.footer .container {
+    text-align: center;
+    margin: 0 auto;
+    border-top: 1px solid white;
+}
+.footer .container p{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/*  MEDIA QUERIES */
+@media(max-width: 1440px){
+    .main-content .container .container-body .cardapio-principal .pizza img{
+        width: 190px;
+        height: 160px;
+    }
+}
+
+@media(max-width: 1024px){
+    .main-content .container .container-body .cardapio-principal{
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+
+    .main-content .container .container-body .cardapio-principal .pizza img{
+        width: 220px;
+        height: 180px;
+    }
+
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+    .main-content .container .container-body .cardapio-principal{
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+    .main-content .container .container-body .avaliacoes .stars img{
+        width: 10px;
+    }
+    
+}
+
+@media(max-width: 425px){
+    .main-content .container .container-body .cardapio-principal .pizza img{
+        width: 200px;
+        height: 140px;
+    }
+    .main-content .container .container-body .cardapio-secundario{
+       flex-direction: column;
+       align-items: center;
+    }
+    .main-content .container .container-body h4{
+        text-align: center;
+    }
+    .main-content .container .container-body .avaliacoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+
+@media(max-width: 375px){
+    .main-content .container .container-body .cardapio-principal .pizza img{
+        width: 150px;
+        height: 100px;
+    }
+}

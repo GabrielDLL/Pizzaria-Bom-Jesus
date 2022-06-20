@@ -1,0 +1,49 @@
+.dropdown{
+    position: relative;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+}
+
+.dropdown .btn-dropdown{
+    width: 40px;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    background-image: url("/imgs/fundo-menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 250px;
+    z-index: 999;
+}
+
+
+
+.dropdown .dropdown-content a{
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin: 20px 25px;
+    font-size: 2.2rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown .dropdown-content .logout{
+    background-color: darkred;
+    color: white;
+  }
+
+  .dropdown .dropdown-content img{
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } 

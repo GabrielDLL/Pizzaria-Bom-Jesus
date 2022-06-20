@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../css/msg.css">
+    <link rel="stylesheet" type="text/css" href="../css/registro_clientes/style.css">
+    
+    <title>Registro - Área do Cliente</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-body">
+            <div class="login-area">
+                <div class="header-area">
+                    <img src="../icons/logopizzaria.png">
+                    <h2>Bem-Vindo</h2>
+                </div>
+                <div class="input-area">
+                    <div class="error-area">
+                                <%- include('partials/_msg');%>
+                                <% if(erros){%>
+                                <% erros.forEach(function(erros){ %>
+                                    <div class="error">
+                                        <p><%= erros.texto %></p>
+                                    </div>
+                                <%}); %>
+                                <%}%>
+                    </div>
+                    <form action="" method="post">
+                        
+                        <div class="user-area">
+                            <label for="usuario">Usuário:</label>
+                            <input type="text" name="usuario" required>
+                            
+                        </div>
+                        <div class="user-area">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" required>
+                        </div>
+                        <div class="password-area">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" required>
+                        </div>
+                        <div class="password-area">
+                            <label for="senha2">Repita sua senha:</label>
+                            <input type="password" name="senha2" required>
+                        </div>
+                        <div class="btn-area">
+                            <input type="submit" value="Registrar">
+                            <button type="button"><a href="/">Cancelar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.alert{
+    font-family: 'Roboto',sans-serif;
+}
+.alert p{
+    margin: 0 20px;
+    font-size: 1.8rem;
+}
+
+.alert-success {
+    background-color: rgba(0,255,0,0.5);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.alert-failure {
+    background-color: rgba(255,0,0,0.5);
+    margin-top: 5px;
+    border-radius: 5px;
+}

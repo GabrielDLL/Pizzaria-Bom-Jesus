@@ -1,0 +1,25 @@
+<div class="dropdown">
+    <img class="btn-dropdown"src="../icons/dropdown.svg">
+    <div class="dropdown-content">
+        <% if(page == "home"){%>
+            <a href="/clientes"><img src="../icons/pizza-black.svg">Clientes</a>
+            <a href="/funcionarios"><img src="../icons/group-black.svg">Funcionários</a>
+            <a href="/entregadores"><img src="../icons/truck-black.svg">Entregadores</a>
+        <%}%>
+        <% if(page == "clientes"){%>
+            <a class="logout" href="/clientes/logout">Sair</a>
+            <a href="/funcionarios"><img src="../icons/group-black.svg">Funcionários</a>
+            <a href="/entregadores"><img src="../icons/truck-black.svg">Entregadores</a>
+        <%}%>
+        <% if(page == "funcionarios"){%>
+            <a class="logout" href="/funcionarios/logout">Sair</a>
+            <a href="/clientes"><img src="../icons/pizza-black.svg">Clientes</a>
+            <a href="/entregadores"><img src="../icons/truck-black.svg">Entregadores</a>
+        <%}%>
+        <% if(page == "entregadores"){%>
+            <a class="logout" href="/entregadores/logout">Sair</a>
+            <a href="/funcionarios"><img src="../icons/group-black.svg">Funcionários</a>
+            <a href="/clientes"><img src="../icons/pizza-black.svg">Clientes</a>
+        <%}%>
+    </div>
+</div>

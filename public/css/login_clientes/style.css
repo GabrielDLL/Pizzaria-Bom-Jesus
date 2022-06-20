@@ -1,0 +1,133 @@
+body{
+    background-image: url("/imgs/fundo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container .container-body{
+    border-radius: 10px;
+    background-image: url("/imgs/fundo-menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.container .container-body .login-area {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 50px 0px;
+}
+
+.container .container-body .login-area .header-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 30px;
+    border-bottom: 1px solid white;
+}
+
+.container .container-body .login-area .header-area img{
+    width: 150px;
+}
+
+.container .container-body .login-area .header-area h2{
+    font-weight: 200;
+    font-size: 4.0rem;
+}
+
+.container .container-body .input-area{
+    font-size: 3.3rem;
+    font-weight: 200;
+    padding: 20px;
+    margin: 0px 30px;
+}
+
+.container .container-body .input-area form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-body .input-area form .user-area{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.container .container-body .input-area form .password-area{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.container .container-body .input-area form .btn-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 40px;
+
+}
+.container .container-body .input-area form input[type=submit]{
+    background-color: rgb(0, 68, 0);
+    border: none;
+    width: 150px;
+    font-size: 3.0rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 200;
+}
+
+.container .container-body .input-area form a{
+    background-color: darkred;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    width: 150px;
+    font-size: 3.0rem;
+    height: 60px;
+    border-radius: 5px;
+    font-weight: 200;
+}
+
+.container .container-body .input-area form input[type=text], input[type=password]{
+    line-height: 4.8rem;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 200;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+}
+
+@media(max-width: 768px)
+{
+    body{
+        background-size: auto;
+    }
+    .container .container-body{
+        width: 500px;
+    }
+ 
+    .container .container-body .input-area form .btn-area{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .container-body .input-area form input[type=submit]{
+        margin: 20px;
+        height: 80px;
+    }
+
+    .container .container-body .input-area form .btn-area a{
+        margin: 20px;
+        height: 60px;
+    }
+}
