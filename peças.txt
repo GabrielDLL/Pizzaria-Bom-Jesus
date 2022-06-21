@@ -1,9 +1,0 @@
--Front-end:
-	HTML+CSS para montar os conteudos da pagina e estilizar a pagina.
--Backend:
-	Node.js + Express para fazer site dinamico(vulgo backend).
-	MongoDB - Database
-	Mongoose - Acesso ao MongoDB via node
-	Bcryptjs - Encriptação de senhas
-	Passport - Controle de acesso
--------------------------------------------------------------------------
