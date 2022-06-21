@@ -5,6 +5,7 @@ O objetivo do projeto Pizzaria Bom Jesus foi aprender a utilizar a tecnologia No
 
 ### Tecnologias Usadas:
 Node.js<br>
+HTML e CSS - Para estruturação e estilização do site<br>
 Express - Para o gerenciamento de rotas<br>
 Passport - Para o controle de acesso aos logins<br>
 Bcrypt - Usado para a encriptação de senhas<br>
