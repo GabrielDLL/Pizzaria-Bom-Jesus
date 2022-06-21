@@ -2,7 +2,7 @@
 link: https://pizzariabomjesus.herokuapp.com/
 
 Logins:
-Para áre de clientes é possível criar seu próprio usuário.
+Para área de clientes é possível criar seu próprio usuário.
 
 Para área de funcionários:
 Usuário: admin@funcionario
