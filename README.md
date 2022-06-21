@@ -1,5 +1,17 @@
 ## Pizzaria Bom Jesus
 link: https://pizzariabomjesus.herokuapp.com/
+
+Logins:
+Para áre de clientes é possível criar seu próprio usuário.
+
+Para área de funcionários:
+Usuário: admin@funcionario
+Senha: admin
+
+Para área de entregadores:
+Usuário: admin@entregador
+Senha: admin
+
 ### Objetivo:
 O objetivo do projeto Pizzaria Bom Jesus foi aprender a utilizar a tecnologia Node.js, somada as extensas bibliotecas disponíveis pra essa plataforma.
 
